@@ -1,0 +1,318 @@
+.c {
+  height: 100vh;
+  position: relative;
+  background-color: rgb(21, 21, 21);
+}
+
+.c-bg {
+  clip-path: polygon(
+    73% 22%,
+    87% 45%,
+    76% 74%,
+    56% 92%,
+    7% 100%,
+    0 61%,
+    3% 3%,
+    60% 7%
+  );
+  background: rgb(255, 145, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 145, 0, 1) 0%,
+    rgba(255, 184, 0, 1) 35%
+  );
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: go 5s ease-in-out infinite alternate;
+}
+@keyframes go {
+  25% {
+    transform: translateY(+10px);
+  }
+  50% {
+    transform: translateX(+10px);
+  }
+  75% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateX(-8px);
+  }
+}
+
+.c-wrapper {
+  padding: 50px;
+  display: flex;
+}
+
+.c-left {
+  flex: 1;
+}
+.c-right {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-title {
+  font-size: 60px;
+  color: rgb(21, 21, 21);
+  position: relative;
+}
+
+.c-info-item {
+  display: flex;
+  align-items: center;
+  margin: 50px 0px;
+  font-weight: bolder;
+  font-size: 20px;
+  width: 70%;
+  color: rgb(21, 21, 21);
+  position: relative;
+}
+
+.c-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.c-desc {
+  margin-top: 30px;
+  font-weight: 300;
+  color: rgb(255, 145, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footerform {
+  margin-top: 20px;
+}
+.footerinput {
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid rgb(255, 145, 0);
+  color: rgb(255, 145, 0);
+  margin: 20px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+  background-color: rgb(21, 21, 21);
+}
+.footertextarea {
+  width: 100%;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+  color: rgb(255, 145, 0);
+  border-color: rgb(255, 145, 0);
+  background-color: rgb(21, 21, 21);
+}
+
+.footerbutton {
+  border: none;
+  padding: 15px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 145, 0, 1) 0%,
+    rgba(255, 184, 0, 1) 35%
+  );
+  color: rgb(21, 21, 21);
+  font-weight: 800;
+}
+
+a {
+  color: rgb(21, 21, 21);
+}
+@media screen and (max-width: 480px) {
+  .c-wrapper {
+    flex-direction: column;
+    padding: 0px 50px;
+    background-color: rgb(21, 21, 21);
+  }
+
+  .c-title {
+    display: none;
+  }
+  .c-info-item {
+    margin: 20px 0px;
+  }
+
+  .c-desc {
+    display: none;
+  }
+
+  .footerform {
+    margin-top: 110px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footerinput {
+    width: 35%;
+    height: 40px;
+    margin: 10px;
+    margin-left: 0px;
+  }
+  .footerbutton {
+    margin-top: 10px;
+  }
+
+  .c-bg {
+    clip-path: polygon(
+      54% 0,
+      100% 1%,
+      100% 41%,
+      72% 51%,
+      18% 53%,
+      3% 40%,
+      0 1%
+    );
+    background: rgb(255, 145, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 145, 0, 1) 0%,
+      rgba(255, 184, 0, 1) 35%
+    );
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+
+    animation: go 5s ease-in-out infinite alternate;
+  }
+  @keyframes go {
+    25% {
+      transform: translateY(+2px);
+    }
+    50% {
+      transform: translateX(+2px);
+    }
+    75% {
+      transform: translateY(-1px);
+    }
+    100% {
+      transform: translateX(-1px);
+    }
+  }
+  .c-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .c-wrapper {
+    flex-direction: column;
+    padding: 0px 50px;
+    background-color: rgb(21, 21, 21);
+  }
+
+  .c-title {
+    display: none;
+  }
+  .c-info-item {
+    margin: 20px 0px;
+  }
+
+  .c-desc {
+    display: none;
+  }
+
+  .footerform {
+    margin-top: 110px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footerinput {
+    width: 35%;
+    height: 30px;
+    margin: 10px;
+    margin-left: 0px;
+  }
+  .footerbutton {
+    margin-top: 0px;
+  }
+
+  .c-bg {
+    clip-path: polygon(
+      54% 0,
+      100% 1%,
+      100% 41%,
+      72% 51%,
+      18% 53%,
+      3% 40%,
+      0 1%
+    );
+    background: rgb(255, 145, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 145, 0, 1) 0%,
+      rgba(255, 184, 0, 1) 35%
+    );
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+
+    animation: go 5s ease-in-out infinite alternate;
+  }
+  @keyframes go {
+    25% {
+      transform: translateY(+2px);
+    }
+    50% {
+      transform: translateX(+2px);
+    }
+    75% {
+      transform: translateY(-1px);
+    }
+    100% {
+      transform: translateX(-1px);
+    }
+  }
+  .c-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+  .c-title {
+    font-size: 25px;
+    color: rgb(21, 21, 21);
+    position: relative;
+  }
+
+  .c-desc {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  .c-title {
+    font-size: 24px;
+    color: rgb(21, 21, 21);
+    position: relative;
+  }
+
+  .c-desc {
+    font-size: 12px;
+  }
+  .c-info {
+    font-size: 16px;
+  }
+}

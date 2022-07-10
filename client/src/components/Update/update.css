@@ -1,0 +1,19 @@
+.update-container {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.update-pen {
+  pointer-events: painted;
+  padding: 16px;
+  color: green;
+  margin: 20px;
+}
+
+.update-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

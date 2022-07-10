@@ -1,0 +1,104 @@
+nav {
+  position: relative;
+  justify-content: flex-end;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(255, 184, 0, 1);
+}
+
+.list {
+  list-style-type: none;
+
+  background-color: rgba(255, 184, 0, 1);
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+.items {
+  margin-right: 50px;
+  font-size: 20px;
+  padding: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: black;
+  cursor: pointer;
+  background-color: rgba(255, 184, 0, 1);
+}
+
+.btn {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  padding: 5px;
+  color: #000;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 480px) {
+  .items {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.555);
+    background-color: rgba(255, 184, 0, 1);
+    text-align: center;
+    margin-right: 0px;
+    padding: 5px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav {
+    position: relative;
+  }
+  .list {
+    flex-direction: column;
+    height: auto;
+    background-color: rgba(255, 184, 0, 1);
+    font-size: 12px;
+  }
+  .items:nth-child(1) {
+    margin-top: 16px;
+    background-color: rgba(255, 184, 0, 1);
+  }
+  .items {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.555);
+    background-color: rgba(255, 184, 0, 1);
+    text-align: center;
+    margin-right: 0px;
+    padding: 5px 0;
+  }
+  .btn {
+    display: block;
+    color: rgb(0, 0, 0);
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+  .items {
+    margin-right: 20px;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+    cursor: pointer;
+    background-color: rgba(255, 184, 0, 1);
+  }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  .items {
+    margin-right: 18px;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+    cursor: pointer;
+    background-color: rgba(255, 184, 0, 1);
+  }
+}

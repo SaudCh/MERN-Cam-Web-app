@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: #000000cc; */
+}
+
+.registerTitle {
+  font-size: 50px;
+}
+
+.registerForm {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.175);
+  width: 40vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.registerInput {
+  height: 20px;
+  width: 20vw;
+  padding: 10px;
+  margin: 20px;
+  font-size: 24px;
+}
+
+.registerLoginButton {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  border: none;
+  padding: 10px 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 145, 0, 1) 0%,
+    rgba(255, 184, 0, 1) 35%
+  );
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.registerButton {
+  border: none;
+  padding: 10px 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 145, 0, 1) 0%,
+    rgba(255, 184, 0, 1) 35%
+  );
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.content {
+  display: flex;
+}
+
+.top-text {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 480px) {
+  .registerForm {
+    background-color: rgba(255, 255, 255, 0.175);
+    width: 40vw;
+    height: 80vh;
+  }
+  .registerInput {
+    height: 15px;
+    width: 30vw;
+    padding: 10px;
+    margin: 20px;
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .registerForm {
+    background-color: rgba(255, 255, 255, 0.175);
+    width: 60vw;
+    height: 80vh;
+  }
+  .registerInput {
+    height: 20px;
+    width: 40vw;
+    padding: 10px;
+    margin: 20px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+  .registerForm {
+    background-color: rgba(255, 255, 255, 0.175);
+    width: 40vw;
+    height: 80vh;
+  }
+  .registerInput {
+    height: 20px;
+    width: 30vw;
+    padding: 10px;
+    margin: 20px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  .registerForm {
+    background-color: rgba(255, 255, 255, 0.175);
+    width: 40vw;
+    height: 80vh;
+  }
+  .registerInput {
+    height: 20px;
+    width: 20vw;
+    padding: 10px;
+    margin: 20px;
+    font-size: 18px;
+  }
+}

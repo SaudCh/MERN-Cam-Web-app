@@ -1,0 +1,10 @@
+body {
+  background-color: rgba(128, 128, 128, 0.102);
+}
+
+.home {
+  display: flex 5;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  height: 100%;
+}
